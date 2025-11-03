@@ -7,91 +7,74 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-    
 <body>
 
-    <nav class="navbar">
-        <a href="#home" class="active">AR Shishir</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#hobby">Hobby</a>
-        <a href="#skill">Skill</a>
-        <a href="#contact">Contact</a>
-        <a href="#social">Social</a>
-    </nav>
+    <div class="container">
 
-    <div class="container section" id="home">
-        <div class="home-section">
-            
+        <header class="profile-header">
             <img src="shishir.png.png" alt="AR Shishir Profile Picture" class="profile-pic">
+            <h1>AR Shishir</h1>
+            <p>CSE Student at BUBT</p>
+        </header>
+
+        <div class="tab-container">
+            <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
+            <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+            <button class="tablinks" onclick="openTab(event, 'Hobby')">Hobby</button>
+            <button class="tablinks" onclick="openTab(event, 'Skill')">Skill</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+        </div>
+
+        <div id="About" class="tab-content">
+            <h2>About Me (আমার সম্পর্কে)</h2>
+            <p>হ্যালো! আমি AR Shishir, আমি একজন CSE স্টুডেন্ট। আমি নতুন প্রযুক্তি শিখতে এবং সৃজনশীল কাজ করতে ভালোবাসি।</p>
             
-            <div class="home-text">
-                <p>Hello, I am</p>
-                <h1>AR Shishir</h1>
-                <p>CSE Student at BUBT</p>
+            </div>
+
+        <div id="Education" class="tab-content">
+            <h2>Education (শিক্ষা)</h2>
+            <p>আমি বর্তমানে এখানে পড়াশোনা করছি:</p>
+            <ul style="font-size: 1.1rem;">
+                <li>Bachelor of Science in CSE - BUBT</li>
+                <li>HSC - (আপনার কলেজের নাম এখানে লিখুন)</li>
+            </ul>
+            </div>
+
+        <div id="Hobby" class="tab-content">
+            <h2>Hobby (আমার শখ)</h2>
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <h3>ছবি আঁকা</h3>
+                    <p>অবসর সময়ে আমি ছবি আঁকতে পছন্দ করি।</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>ক্রিকেট</h3>
+                    <p>ক্রিকেট আমার অন্যতম প্রিয় একটি খেলা।</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>ফুটবল</h3>
+                    <p>ফুটবল খেলা দেখতে এবং খেলতে ভালোবাসি।</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container section" id="about">
-        <h2 class="section-title">About Me (আমার সম্পর্কে)</h2>
-        <p style="text-align: center;">
-            হ্যালো! আমি AR Shishir, আমি একজন CSE স্টুডেন্ট। আমি নতুন প্রযুক্তি শিখতে এবং সৃজনশীল কাজ করতে ভালোবাসি।
-        </p>
-    </div>
-
-    <div class="container section" id="education">
-        <h2 class="section-title">Education (শিক্ষা)</h2>
-        <p style="text-align: center;">
-            আমি বর্তমানে এখানে পড়াশোনা করছি:
-            <br>
-            <span style="font-weight: bold;">Bachelor of Science in CSE</span>
-            <br>
-            Bangladesh University of Business and Technology (BUBT)
-        </p>
-    </div>
-
-    <div class="container section"id="hobby">
-        <h2 class="section-title">Hobby (আমার শখ)</h2>
-        <div class="hobbies-container">
-            <div class="hobby-card">
-                <h3>ছবি আঁকা</h3>
-                <p>অবসর সময়ে আমি ছবি আঁকতে পছন্দ করি।</p>
-            </div>
-            <div class="hobby-card">
-                <h3>ক্রিকেট</h3>
-                <p>ক্রিকেট আমার অন্যতম প্রিয় একটি খেলা।</p>
-            </div>
-            <div class="hobby-card">
-                <h3>ফুটবল</h3>
-                <p>ফুটবল খেলা দেখতে এবং খেলতে ভালোবাসি।</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container section" id="skill">
-        <h2 class="section-title">Skill (দক্ষতা)</h2>
-        <div class="placeholder-box">
+        <div id="Skill" class="tab-content">
+            <h2>Skill (দক্ষতা)</h2>
             <p>আমার স্কিলগুলো শীঘ্রই এখানে যোগ করা হবে...</p>
-        </div>
-    </div>
+            </div>
 
-    <div class="container section" id="contact">
-        <h2 class="section-title">Contact (যোগাযোগ)</h2>
-        <div class="contact">
+        <div id="Contact" class="tab-content">
+            <h2>Contact (যোগাযোগ)</h2>
             <p>আমার সাথে যোগাযোগ করতে চাইলে, আমাকে ইমেইল করতে পারেন:</p>
-            <a class="contact-email" href="mailto:arshishir395167@gmail.com">
-                arshishir395167@gmail.com
-            </a>
-        </div>
-    </div>
-
-    <div class="container section" id="social">
-        <h2 class="section-title">Social Media (সোশ্যাল মিডিয়া)</h2>
-        <div class="placeholder-box">
+            <p>
+                <a class="contact-email" href="mailto:arshishir395167@gmail.com">
+                    arshishir395167@gmail.com
+                </a>
+            </p>
             <p>আমার সোশ্যাল মিডিয়া লিঙ্কগুলো শীঘ্রই এখানে যোগ করা হবে...</p>
-        </div>
-    </div>
+            </div>
+
+    </div> <script src="script.js"></script>
 
 </body>
 </html>
