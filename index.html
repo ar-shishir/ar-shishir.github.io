@@ -4,184 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Shishir - Personal Website</title>
-
-    <style>
-        /* বেসিক স্টাইল */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        /* মূল কন্টেইনার (সাদা কার্ড) */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-
-        /* --- সেকশন ১: Home (হেডার) --- */
-        .header {
-            text-align: center;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #eee;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #2c3e50;
-        }
-        .header p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            margin: 5px 0 0 0;
-        }
-
-        /* --- সেকশনের টাইটেল (H2) --- */
-        .section-title {
-            font-size: 1.8rem;
-            color: #34495e;
-            border-bottom: 2px solid #3498db; /* নীল আন্ডারলাইন */
-            padding-bottom: 8px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        /* --- সেকশন ২ ও ৩: About & Education --- */
-        .section p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-        .education-item {
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* --- সেকশন ৪: Hobby (শখ) --- */
-        .hobbies-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; /* ছোট স্ক্রিনে নিচে নিচে দেখাবে */
-        }
-        .hobby-card {
-            width: 30%;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            margin-bottom: 15px; /* কার্ডের মধ্যে গ্যাপ */
-        }
-        .hobby-card h3 {
-            margin-top: 0;
-            color: #3498db;
-        }
-
-        /* --- সেকশন ৫ ও ৬ ও ৭: Skills, Contact & Social (খালি সেকশন) --- */
-        .placeholder-box {
-            font-size: 1.1rem;
-            text-align: center;
-            padding: 30px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            border: 1px dashed #ccc;
-            color: #777;
-        }
-        
-        /* --- সেকশন ৭: Contact (যোগাযোগ) --- */
-        .contact {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .contact p {
-            font-size: 1.1rem;
-        }
-        .contact-email {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .contact-email:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
+    <nav class="navbar">
+        <a href="#home" class="active">AR Shishir</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#hobby">Hobby</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
+        <a href="#social">Social</a>
+    </nav>
 
+    <div class="container section" id="home">
         <header class="header">
-            <h1>AR Shishir</h1>
-            <p>CSE Student at BUBT | Artist | Sports Enthusiast</p>
+            <h1>Welcome!</h1>
+            <p>এটি AR Shishir-এর পার্সোনাল ওয়েবসাইট</p>
         </header>
+    </div>
 
-        <section class="section">
-            <h2 class="section-title">About Me (আমার সম্পর্কে)</h2>
-            <p>
-                হ্যালো! আমি AR Shishir, আমি একজন CSE স্টুডেন্ট। আমি নতুন প্রযুক্তি শিখতে এবং সৃজনশীল কাজ করতে ভালোবাসি।
-            </p>
-        </section>
+    <div class="container section" id="about">
+        <h2 class="section-title">About Me (আমার সম্পর্কে)</h2>
+        <p>
+            হ্যালো! আমি AR Shishir, আমি একজন CSE স্টুডেন্ট। আমি নতুন প্রযুক্তি শিখতে এবং সৃজনশীল কাজ করতে ভালোবাসি।
+        </p>
+    </div>
 
-        <section class="section">
-            <h2 class="section-title">Education (শিক্ষা)</h2>
-            <p>
-                আমি বর্তমানে এখানে পড়াশোনা করছি:
-                <br>
-                <span class="education-item">Bachelor of Science in CSE</span>
-                <br>
-                Bangladesh University of Business and Technology (BUBT)
-            </p>
-        </section>
+    <div class="container section" id="education">
+        <h2 class="section-title">Education (শিক্ষা)</h2>
+        <p>
+            আমি বর্তমানে এখানে পড়াশোনা করছি:
+            <br>
+            <span style="font-weight: bold;">Bachelor of Science in CSE</span>
+            <br>
+            Bangladesh University of Business and Technology (BUBT)
+        </p>
+    </div>
 
-        <section class="section">
-            <h2 class="section-title">Hobby (আমার শখ)</h2>
-            <div class="hobbies-container">
-                <div class="hobby-card">
-                    <h3>ছবি আঁকা</h3>
-                    <p>অবসর সময়ে আমি ছবি আঁকতে পছন্দ করি।</p>
-                </div>
-                <div class="hobby-card">
-                    <h3>ক্রিকেট</h3>
-                    <p>ক্রিকেট আমার অন্যতম প্রিয় একটি খেলা।</p>
-                </div>
-                <div class="hobby-card">
-                    <h3>ফুটবল</h3>
-                    <p>ফুটবল খেলা দেখতে এবং খেলতে ভালোবাসি।</p>
-                </div>
+    <div class="container section"id="hobby">
+        <h2 class="section-title">Hobby (আমার শখ)</h2>
+        <div class="hobbies-container">
+            <div class="hobby-card">
+                <h3>ছবি আঁকা</h3>
+                <p>অবসর সময়ে আমি ছবি আঁকতে পছন্দ করি।</p>
             </div>
-        </section>
+            <div class="hobby-card">
+                <h3>ক্রিকেট</h3>
+                <p>ক্রিকেট আমার অন্যতম প্রিয় একটি খেলা।</p>
+            </div>
+            <div class="hobby-card">
+                <h3>ফুটবল</h3>
+                <p>ফুটবল খেলা দেখতে এবং খেলতে ভালোবাসি।</p>
+            </div>
+        </div>
+    </div>
 
-        <section class="section">
-            <h2 class="section-title">Skill (দক্ষতা)</h2>
-            <div class="placeholder-box">
-                <p>আমার স্কিলগুলো শীঘ্রই এখানে যোগ করা হবে...</p>
-                </div>
-        </section>
+    <div class="container section" id="skill">
+        <h2 class="section-title">Skill (দক্ষতা)</h2>
+        <div class="placeholder-box">
+            <p>আমার স্কিলগুলো শীঘ্রই এখানে যোগ করা হবে...</p>
+        </div>
+    </div>
 
-        <section class="section contact">
-            <h2 class="section-title">Contact (যোগাযোগ)</h2>
-            <p>
-                আমার সাথে যোগাযোগ করতে চাইলে, আমাকে ইমেইল করতে পারেন:
-            </p>
+    <div class="container section" id="contact">
+        <h2 class="section-title">Contact (যোগাযোগ)</h2>
+        <p style="text-align: center;">
+            আমার সাথে যোগাযোগ করতে চাইলে, আমাকে ইমেইল করতে পারেন:
+            <br>
             <a class="contact-email" href="mailto:arshishir395167@gmail.com">
                 arshishir395167@gmail.com
             </a>
-        </section>
+        </p>
+    </div>
 
-        <section class="section">
-            <h2 class="section-title">Social Media (সোশ্যাল মিডিয়া)</h2>
-            <div class="placeholder-box">
-                <p>আমার সোশ্যাল মিডিয়া লিঙ্কগুলো শীঘ্রই এখানে যোগ করা হবে...</p>
-                </div>
-        </section>
-
+    <div class="container section" id="social">
+        <h2 class="section-title">Social Media (সোশ্যাল মিডিয়া)</h2>
+        <div class="placeholder-box">
+            <p>আমার সোশ্যাল মিডিয়া লিঙ্কগুলো শীঘ্রই এখানে যোগ করা হবে...</p>
+        </div>
     </div>
 
 </body>
