@@ -1,0 +1,109 @@
+/* === বেসিক স্টাইল === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* === ন্যাভিগেশন মেন্যু (আপনার ক্লিক করার জায়গা) === */
+.navbar {
+    background-color: #333; /* মেন্যুর ব্যাকগ্রাউন্ড কালার (কালো) */
+    overflow: hidden;
+    position: sticky; /* মেন্যুটিকে স্ক্রল করার সময় উপরে আটকে রাখবে */
+    top: 0;
+    z-index: 100;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white; /* মেন্যুর লেখার কালার (সাদা) */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+/* মাউস নিলে কালার পরিবর্তন */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* নামের জন্য বিশেষ স্টাইল (বামদিকে) */
+.navbar a.active {
+    background-color: #3498db; /* আপনার নামের জন্য নীল ব্যাকগ্রাউন্ড */
+    color: white;
+}
+
+/* === সেকশনের জন্য কন্টেইনার === */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* সেকশনগুলোর মধ্যে গ্যাপ */
+.section {
+    padding-top: 50px; /* মেন্যু থেকে ক্লিক করলে যেন লেখাটি না ঢাকে */
+    margin-bottom: 20px;
+}
+
+/* সেকশনের টাইটেল (H2) */
+.section-title {
+    font-size: 1.8rem;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.section p, .section li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* === খালি সেকশনের জন্য স্টাইল === */
+.placeholder-box {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    color: #777;
+}
+
+/* --- হবি কার্ডের স্টাইল --- */
+.hobbies-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hobby-card {
+    width: 30%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+.hobby-card h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+/* --- কন্টাক্ট সেকশনের ইমেইল --- */
+.contact-email {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+.contact-email:hover {
+    text-decoration: underline;
+}
