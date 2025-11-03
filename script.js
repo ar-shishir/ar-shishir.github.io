@@ -20,7 +20,8 @@ function openTab(evt, tabName) {
 }
 
 // ডিফল্ট হিসেবে প্রথম ট্যাবটি (About Me) খোলা রাখবে
-// আপনি যদি চান অন্য ট্যাব খোলা থাকুক, তাহলে 0 এর জায়গায় 1, 2, 3... লিখতে পারেন
+// এই কোডটি নিশ্চিত করে যে পেইজটি লোড হওয়ার পরই যেন জাভাস্ক্রিপ্টটি চলে
 document.addEventListener("DOMContentLoaded", function() {
+    // 0 মানে প্রথম বাটন। আপনি 1 লিখলে দ্বিতীয় বাটনটি (Education) ডিফল্ট হিসেবে খোলা থাকবে।
     document.getElementsByClassName("tablinks")[0].click();
 });
